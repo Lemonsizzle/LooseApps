@@ -29,7 +29,7 @@ class PasswordGenerator:
 
         # Create include special characters checkbox
         self.include_special_chars = BooleanVar()
-        self.include_special_chars.set(True)  # Default to including special characters
+        self.include_special_chars.set(False)  # Default to excluding special characters
         self.checkbutton_special_chars = Checkbutton(window, text="Include Special Characters",
                                                      variable=self.include_special_chars)
         self.checkbutton_special_chars.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
